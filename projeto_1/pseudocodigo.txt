@@ -100,7 +100,7 @@ retornar str_resultado
 
 [PROGRAMA]
 
-loop for i=0; i>=50:
+loop for i=0; i>=1000:
 lista resultadosFig
 u = classe escolhaFigura();
 se u == 1
@@ -126,6 +126,7 @@ i++
 se u == 9
 escolha = classe resultados()
 imprimir resultadosFig no índice que corresponde ao número da variável 'escolha'
+i++
 
 se u == 0
-i = 100 
+i = 1000
