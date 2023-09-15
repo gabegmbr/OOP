@@ -1,0 +1,88 @@
+[CLASSES]
+
+
+classe ponto
+imprimir "Insira a coordenada X do ponto: "
+receber x do usuário
+imprimir "Insira a coordenada Y do ponto: "
+receber y do usuário
+
+str_resultado = ("Ponto localizado em: ({x},{y}).")
+
+
+classe linha
+imprimir "Insira a coordenada X do primeiro ponto da linha:"
+receber x0 do usuário
+imprimir "Insira a coordenada Y do primeiro ponto da linha:"
+receber y0 do usuário
+imprimir "Insira a coordenada X do segundo ponto da linha:"
+receber x1 do usuário
+imprimir "Insira a coordenada Y do segundo ponto da linha:"
+receber y1 do usuário
+
+base = x1-x0
+altura = y1-y0
+raiz = math.sqrt(base**2+altura**2)
+
+str_resultado = ("Linha localizada nos pontos: ({x0},{y0}) e ({x1},{y1}). [quebra de linha] Comprimento da")
+
+retornar str_resultado
+
+
+classe quadrado
+imprimir "Insira a coordenada X do quadrado:"
+receber x do usuário
+imprimir "Insira a coordenada Y do quadrado:"
+receber y do usuário
+imprimir "Insira um lado do quadrado em cm"
+receber variável int "lado" do usuário
+
+perimetro = 4*lado
+area = lado**2
+
+str_resultado = ("Quadrado localizado em: ({x},{y}). [quebra de linha] Perímetro do quadrado: {perimetro} cm. [quebra de linha] Área do quadrado:{area} cm.")
+
+retornar str_resultado
+
+
+classe retangulo
+imprimir "Insira a coordenada X do retângulo:"
+receber x do usuário
+imprimir "Insira a coordenada Y do retângulo:"
+receber y do usuário
+imprimir "Insira a altura do retângulo em cm:"
+receber variável int "altura" do usuário
+imprimir "Insira a base do retângulo em cm:"
+receber variável int "base" do usuário
+
+perimetro = 2*(altura+base)
+area = altura*base
+
+str_resultado = ("Retângulo localizado em: ({x},{y}). [quebra de linha] Perímetro do retângulo: {perimetro} cm. [quebra de linha] Área do retângulo:{area} cm.")
+
+retornar str_resultado
+
+
+classe círculo
+
+imprimir "Insira a coordenada X do círculo:"
+receber x do usuário
+imprimir "Insira a coordenada Y do círculo:"
+receber y do usuário
+imprimir "Insira o raio do círculo em cm:"
+receber variável int "raio"
+
+perimetro = 2*3,14*raio
+area = 3,14*raio*raio
+
+str_resultado = ("Círculo localizado em: ({x},{y}). [quebra de linha] Perímetro do círculo: {perimetro} cm. [quebra de linha] Área do círculo:{area} cm.")
+
+retornar str_resultado
+
+
+[PROGRAMA]
+
+loop the sample, release
+loop the sample, be free
+blessed are the hands
+that touched the machine
