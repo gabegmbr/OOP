@@ -1,6 +1,24 @@
 [CLASSES]
 
 
+classe escolhaFigura
+imprimir "Digite o número correspondente à figura geométrica a ser inserida:
+1. Ponto
+2. Linha
+3. Quadrado
+4. Retângulo
+5. Círculo
+
+9. Verificar informações sobre figura geométrica previamente registrada
+0. Encerrar Programa"
+receber escolha do usuário
+retornar escolha
+
+classe resultados
+"Insira o número da figura geométrica a ser verificada. O primeiro elemento começa em 0."
+receber num do usuário
+retornar num
+
 classe ponto
 imprimir "Insira a coordenada X do ponto: "
 receber x do usuário
@@ -82,7 +100,32 @@ retornar str_resultado
 
 [PROGRAMA]
 
-loop the sample, release
-loop the sample, be free
-blessed are the hands
-that touched the machine
+loop for i=0; i>=50:
+lista resultadosFig
+u = classe escolhaFigura();
+se u == 1
+adicionar classe ponto() à lista resultadosFig # checar se de fato é possível executar isso
+i++
+
+se u == 2
+adicionar classe linha() à lista resultadosFig
+i++
+
+se u == 3
+adicionar classe quadrado() à lista resultadosFig
+i++
+
+se u == 4
+adicionar classe retangulo() à lista resultadosFig
+i++
+
+se u == 5
+adicionar classe circulo() à lista resultadosFig
+i++
+
+se u == 9
+escolha = classe resultados()
+imprimir resultadosFig no índice que corresponde ao número da variável 'escolha'
+
+se u == 0
+i = 100 
